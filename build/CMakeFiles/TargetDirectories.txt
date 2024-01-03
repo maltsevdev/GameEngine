@@ -1,0 +1,9 @@
+/home/unix/Github/GameEngine/build/CMakeFiles/GameEngine.dir
+/home/unix/Github/GameEngine/build/CMakeFiles/edit_cache.dir
+/home/unix/Github/GameEngine/build/CMakeFiles/rebuild_cache.dir
+/home/unix/Github/GameEngine/build/external/glfw/CMakeFiles/edit_cache.dir
+/home/unix/Github/GameEngine/build/external/glfw/CMakeFiles/rebuild_cache.dir
+/home/unix/Github/GameEngine/build/external/glfw/src/CMakeFiles/glfw.dir
+/home/unix/Github/GameEngine/build/external/glfw/src/CMakeFiles/update_mappings.dir
+/home/unix/Github/GameEngine/build/external/glfw/src/CMakeFiles/edit_cache.dir
+/home/unix/Github/GameEngine/build/external/glfw/src/CMakeFiles/rebuild_cache.dir

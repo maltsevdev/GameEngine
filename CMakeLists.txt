@@ -16,6 +16,8 @@ add_executable(${PROJECT_NAME}
 	src/Render/VBO/VBO.h
 	include/glad/glad.c 
 	include/glad/glad.h
+	src/glfwCallback/glfwCallback.cpp
+	src/glfwCallback/glfwCallback.h
 )
 
 set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)

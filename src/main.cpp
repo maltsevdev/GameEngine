@@ -4,6 +4,7 @@
 #include <GLFW/glfw3.h>
 #include "Render/ShaderProgram/ShaderProgram.h"
 #include "Render/VBO/VBO.h"
+#include "glfwCallback/glfwCallback.h"
 
 int windowSizeX = 640;
 int windowSizeY = 480;
@@ -38,21 +39,6 @@ const char* fragment_shader =
 "   fragment_color = vec4(color, 1.0);"
 "}";
 
-void glfwWindowSizeCallback(GLFWwindow* pWindow, int sizeX, int sizeY)
-{
-    windowSizeX = sizeX;
-    windowSizeY = sizeY;
-    glViewport(0, 0, windowSizeX, windowSizeY); 
-}
-
-void glfwKeyCallback(GLFWwindow* pWindow, int key, int scanCode, int action, int mode)
-{
-    if (key == static_cast<int>(GLFW_KEY_ESCAPE) && action == static_cast<int>(GLFW_PRESS))
-    {
-        glfwSetWindowShouldClose(pWindow, static_cast<int>(GL_TRUE)); 
-    } 
-}
-
 int main(void)
 {
     if (!glfwInit())
@@ -70,8 +56,8 @@ int main(void)
         return -1;
     }
 
-    glfwSetWindowSizeCallback(pWindow, glfwWindowSizeCallback);
-    glfwSetKeyCallback(pWindow, glfwKeyCallback);
+    glfwSetWindowSizeCallback(pWindow, Callback::glfwWindowSizeCallback);
+    glfwSetKeyCallback(pWindow, Callback::glfwKeyCallback);
 
     glfwMakeContextCurrent(pWindow);
 
